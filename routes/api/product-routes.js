@@ -47,7 +47,7 @@ router.post('/', (req, res) => {
       tagIds: [1, 2, 3, 4]
     }
   */
-  Product.create ({
+  Product.create (req.body, {
     product_name: req.body.product_name,
     price: req.body.price,
     stock: req.body.stock,
